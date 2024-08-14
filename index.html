@@ -5,34 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasir's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Nasir's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#login">Login</a></li>
-            <li><a href="#signup">Sign Up</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="about">
+        <section id="about" class="content-section">
             <h2>About Me</h2>
-            <p>This is Nasir's portfolio website. Here you can find information about my projects and contact me.</p>
+            <p>Welcome to my portfolio website! Here you can find information about my projects and how to contact me.</p>
         </section>
-        <section id="projects">
+        <section id="projects" class="content-section">
             <h2>Projects</h2>
-            <p>Project details will be here.</p>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Project description goes here. Details about the project, technologies used, and outcomes.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Project description goes here. Details about the project, technologies used, and outcomes.</p>
+            </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="content-section">
             <h2>Contact</h2>
-            <p>Contact details will be here.</p>
+            <p>Email: nasir@example.com</p>
+            <p>Phone: +1234567890</p>
         </section>
-        <section id="login">
+        <section id="login" class="content-section form-section">
             <h2>Login</h2>
             <form id="loginForm">
                 <label for="loginEmail">Email:</label>
@@ -42,7 +51,7 @@
                 <button type="submit">Login</button>
             </form>
         </section>
-        <section id="signup">
+        <section id="signup" class="content-section form-section">
             <h2>Sign Up</h2>
             <form id="signupForm">
                 <label for="signupName">Name:</label>
@@ -55,6 +64,8 @@
             </form>
         </section>
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Nasir's Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
